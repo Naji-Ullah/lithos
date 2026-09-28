@@ -1,0 +1,58 @@
+<div id="os" class="night">
+  <canvas id="wall" aria-hidden="true"></canvas>
+
+  <section id="scr-desk" class="screen" hidden>
+    <div id="dicons" tabindex="-1" aria-label="Desktop"></div>
+    <div id="snap"></div>
+    <div id="wins"></div>
+    <nav id="panel" aria-label="Panel">
+      <button class="pbtn" id="p-launch" title="Applications" aria-label="Applications"><span class="app"></span></button>
+      <div id="tasks" role="toolbar" aria-label="Running applications"></div>
+      <div id="tray">
+        <button class="pbtn tray-ic" id="p-net" title="Network" aria-label="Network"></button>
+        <button class="pbtn tray-ic" id="p-vol" title="Volume" aria-label="Volume"></button>
+        <button class="pbtn tray-ic" id="p-bell" title="Notifications" aria-label="Notifications"></button>
+        <button class="pbtn" id="p-clock" aria-label="Clock and calendar"><span class="t"></span><span class="d"></span></button>
+        <button id="p-desk" title="Show desktop" aria-label="Show desktop"></button>
+      </div>
+    </nav>
+    <div id="toasts" aria-live="polite"></div>
+  </section>
+
+  <section id="scr-login" class="screen" hidden aria-label="Sign in">
+    <canvas id="lg-bg" aria-hidden="true"></canvas>
+    <div class="lg-top"><span id="lg-net"></span><span id="lg-vol"></span><span id="lg-kb">EN</span></div>
+    <div class="lg-clock" id="lg-clock">00:00</div>
+    <div class="lg-date" id="lg-date"></div>
+    <div class="lg-user">
+      <div class="avatar lg">NU</div>
+      <div class="lg-name">Naji Ullah</div>
+      <div class="lg-form" id="lg-form">
+        <input id="lg-pass" type="password" aria-label="Password" placeholder="Password" autocomplete="off" enterkeyhint="go">
+        <button class="lg-go" id="lg-go" type="button" aria-label="Sign in"></button>
+      </div>
+      <div class="lg-hint" id="lg-hint">Press Enter to sign in</div>
+    </div>
+    <div class="lg-bottom">
+      <div class="lg-meta"><span>Session: Strata (Wayland)</span></div>
+      <div class="lg-group">
+        <button class="lg-btn" id="lg-restart" type="button"></button>
+        <button class="lg-btn" id="lg-off" type="button"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="scr-boot" class="screen console" hidden>
+    <div id="grub" hidden></div>
+    <pre id="klog" hidden></pre>
+    <div id="splash" hidden></div>
+    <div class="skiphint" id="skiphint" hidden>Esc to skip</div>
+  </section>
+
+  <section id="scr-off" class="screen" hidden>
+    <div>
+      <button class="power-on" id="power-on" aria-label="Power on"></button>
+      <div class="off-label">POWER</div>
+    </div>
+  </section>
+</div>
